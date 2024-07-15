@@ -62,26 +62,26 @@ Reduce the dimension of object embeddings using PCA, and cluster to obtain pseud
 python ./Step1_Prepare_SAM_prediction/step1_5_cluster_and_make_pslabels.py
 ```
 
-#### 2. Detection Pre-training
+### 2. Detection Pre-training
 Pre-training with MutDet framework: 
 ```shell
 python ./train.py ./configs/Step2_DetectionPretraining_Mutdet/MutDet_DOTA_Pretrain.py
 ```
 
-#### 3. Fine-tuning 
+### 3. Fine-tuning 
 Fine-tuning with downstream dataset
 ```shell
 python ./train.py ./configs/Step3_Finetuning/ars_detr_DIOR_MutDet.py
 ```
 Checkpoints retained during the pre-training process can be directly used to initialize the detector. During initialization, warnings such as 'parameter mismatch' may occur, which is due to MutDet introducing additional modules and using a 256-dimensional classification head. However, the remaining parameters of the detector can be inherited normally, thus not affecting the pre-training effectiveness.
 
-### Results on DOTA and DIOR
+## Results on DOTA and DIOR
 
 ![diagram](.github/images/Results_on_DIOR_DOTA.png)
 
 
 
-### Pre-trained Models
+## Pre-trained Models
 | Name     | architecture | dataset         | google drive | Baidu Cloud                                                             |
 |----------|--------------|-----------------|-------------|-------------------------------------------------------------------------|
 | MutDet   | ResNet-50    | DOTA-v1.0 train | To do       | [download](https://pan.baidu.com/s/1BfvVtRjL1kafNEjaN3913A?pwd=wt0d) (wt0d) |
