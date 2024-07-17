@@ -1,18 +1,12 @@
 
 # MutDet: Mutually Optimizing Pre-training for Remote Sensing Object Detection
-[Paper][Citing][Appendix] (under construction)
+[Paper](https://arxiv.org/abs/2407.09920)[Citing][Appendix] (under construction)
 
-Welcome to the official repository of [MutDet](https://arxiv.org/abs/2103.16607). 
+Welcome to the official repository of [MutDet](https://arxiv.org/abs/2407.09920). 
 In this work, we propose a pre-training method for object detection in remote sensing images, which can be applied to any DETR-based detector and theoretically extended to other single-stage or two-stage detectors.
 Our paper is accepted by ECCV 2024. 
 
 ![diagram](.github/images/MutDet_Framework.png)
-
-
-
-```
-The Arxiv link
-```
 
 
 
@@ -86,3 +80,22 @@ Checkpoints retained during the pre-training process can be directly used to ini
 |----------|--------------|-----------------|-------------|-------------------------------------------------------------------------|
 | MutDet   | ResNet-50    | DOTA-v1.0 train | To do       | [download](https://pan.baidu.com/s/1BfvVtRjL1kafNEjaN3913A?pwd=wt0d) (wt0d) |
 | MutDet | Swin-T       | RSDet4          | To do       |  [download](https://pan.baidu.com/s/1Kq-0Mj8zy8f79v_uA0BjqA?pwd=7wsd) (7wsd) |
+
+## Pre-trained Models
+
+## Citation
+If you use this toolbox in your research or wish to refer to the baseline results published here, please use the following BibTeX entries:
+
+- Citing **detrex**:
+
+```BibTeX
+@misc{huang2024mutdet,
+      title={MutDet: Mutually Optimizing Pre-training for Remote Sensing Object Detection}, 
+      author={Ziyue Huang and Yongchao Feng and Qingjie Liu and Yunhong Wang},
+      year={2024},
+      eprint={2407.09920},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2407.09920}, 
+}
+```
