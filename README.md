@@ -86,7 +86,7 @@ Checkpoints retained during the pre-training process can be directly used to ini
 ## Citation
 If you use this toolbox in your research or wish to refer to the baseline results published here, please use the following BibTeX entries:
 
-- Citing **detrex**:
+- Citing **MutDet**:
 
 ```BibTeX
 @misc{huang2024mutdet,
