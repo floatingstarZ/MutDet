@@ -93,9 +93,7 @@ If you use this toolbox in your research or wish to refer to the baseline result
       title={MutDet: Mutually Optimizing Pre-training for Remote Sensing Object Detection}, 
       author={Ziyue Huang and Yongchao Feng and Qingjie Liu and Yunhong Wang},
       year={2024},
-      eprint={2407.09920},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
+      booktitle={European conference on computer vision},
       url={https://arxiv.org/abs/2407.09920}, 
 }
 ```
